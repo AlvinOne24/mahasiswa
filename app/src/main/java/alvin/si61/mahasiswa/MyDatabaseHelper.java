@@ -54,7 +54,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public long tambahData(String nama, String npm, String prodi){
+    public long tambahData(String npm, String nama, String prodi){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -77,7 +77,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return varCursor;
     }
 
-    public long ubahData(String id, String nama, String npm, String prodi){
+    public long ubahData(String id, String npm, String nama, String prodi){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 

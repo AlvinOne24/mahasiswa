@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
         SQLLiteToArrayList();
 
-        adDestinasi = new AdapterDestinasi(MainActivity.this,arrId,arrNAma, arrAlamat, arrJam);
-        rvDestinasi.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-        rvDestinasi.setAdapter(adDestinasi);
+        adMahasiswa = new AdapterMahasiswa(MainActivity.this,arrId,arrNpm, arrNama, arrProdi);
+        rvMahasiswa.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+        rvMahasiswa.setAdapter(adMahasiswa);
 
     }
 
